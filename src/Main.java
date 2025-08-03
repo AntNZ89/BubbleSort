@@ -1,11 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        double[] array = new double[10];
 
-        for (int c = 0 ; c < array.length ; c++) {
-            array[c] = Math.random();
-        }
+        double[] array = createArray(10);
+
+        sortArray(array);
+
+
+    }
+
+
+
+    public static void sortArray(double[] array){
 
         System.out.println(getArrayAsString(array));
         double swapNum1;
@@ -35,6 +41,21 @@ public class Main {
             }
         }
         System.out.println(getArrayAsString(array));
+    }
+
+
+    public static double[] createArray(int length){
+
+
+        double[] array = new double[length];
+
+        for (int c = 0 ; c < array.length ; c++) {
+            array[c] = Math.random();
+        }
+
+        return array;
+
+
     }
 
 
