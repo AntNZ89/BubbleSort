@@ -17,12 +17,10 @@ public class Main {
         double swapNum1;
         double swapNum2;
         int count;
+        int i = 0;
 
-        while (true) {
-
-            count = 0;
-
-            for (int c = 0; c < array.length; c++) {
+        for (int r = 0 ; r < array.length-i ; r++){
+            for (int c = 0; c < array.length-i; c++) {
 
                 if (c < 9) {
                     if (array[c] > array[c + 1]) {
@@ -31,14 +29,9 @@ public class Main {
                         array[c] = swapNum2;
                         array[c + 1] = swapNum1;
                     }
-                    else {
-                        count += 1;
-                    }
                 }
             }
-            if (count == 9){
-                break;
-            }
+            i++;
         }
         System.out.println(getArrayAsString(array));
     }
