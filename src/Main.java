@@ -1,11 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-
         double[] array = createArray(10);
 
         sortArray(array);
-
 
     }
 
@@ -16,7 +14,6 @@ public class Main {
         System.out.println(getArrayAsString(array));
         double swapNum1;
         double swapNum2;
-        int count;
         int i = 0;
 
         for (int r = 0 ; r < array.length-i ; r++){
@@ -39,7 +36,6 @@ public class Main {
 
     public static double[] createArray(int length){
 
-
         double[] array = new double[length];
 
         for (int c = 0 ; c < array.length ; c++) {
@@ -47,8 +43,6 @@ public class Main {
         }
 
         return array;
-
-
     }
 
 
